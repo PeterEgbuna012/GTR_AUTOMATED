@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IsPackable>false</IsPackable>
+	</PropertyGroup>
+
+	<ItemGroup>
+
+		<!-- Allure -->
+		<PackageReference Include="Allure.Net.Commons" Version="2.15.0" />
+		<PackageReference Include="Allure.NUnit" Version="2.15.0" />
+		<PackageReference Include="Allure.Reqnroll" Version="2.15.0" />
+		<PackageReference Include="AllureReport.Generator" Version="0.1.0" />
+		<PackageReference Include="Gherkin" Version="41.0.0" />
+
+		<!-- Azure -->
+		<PackageReference Include="Microsoft.Azure.WebJobs.Core" Version="3.0.47" />
+		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi.Core" Version="2.0.0-preview2" />
+		<PackageReference Include="Microsoft.Azure.WebJobs.Rpc.Core" Version="3.0.47" />
+
+		<!-- Entity Framework -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.10" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="11.0.0-preview.6.26359.118" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="10.0.10" />
+		<PackageReference Include="NuGet.CommandLine" Version="7.6.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="NuGet.Frameworks" Version="7.6.0" />
+		<PackageReference Include="NUnit" Version="5.0.0-beta.1" />
+
+		<!-- Reqnroll -->
+		<PackageReference Include="Reqnroll" Version="3.3.4" />
+		<PackageReference Include="Reqnroll.CustomPlugin" Version="3.3.4" />
+		<PackageReference Include="Reqnroll.NUnit" Version="3.3.4" />
+		<PackageReference Include="Reqnroll.Tools.MsBuild.Generation" Version="3.3.4" />
+		
+
+		<!-- Selenium -->
+		<PackageReference Include="Selenium.WebDriver" Version="4.46.0" />
+		<PackageReference Include="Selenium.Support" Version="4.46.0" />
+		<PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="151.0.7922.1900-beta" />
+
+		<!-- NUnit -->
+		<PackageReference Include="NUnit3TestAdapter" Version="6.2.0" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.8.1" />
+
+		<!-- Configuration -->
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="11.0.0-preview.6.26359.118" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="11.0.0-preview.6.26359.118" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="11.0.0-preview.6.26359.118" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="11.0.0-preview.6.26359.118" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="NUnit.Framework" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Update="Config\appsettings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+</Project>
