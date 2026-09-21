@@ -156,12 +156,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 13
  await testRunner.AndAsync("I open application Depot Management (BRDF)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table704 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table709 = new global::Reqnroll.Table(new string[] {
                             "Yard Asset"});
-                table704.AddRow(new string[] {
+                table709.AddRow(new string[] {
                             "SELHURST-YARD"});
 #line 14
- await testRunner.AndAsync("I filter table Yard Asset:", ((string)(null)), table704, "And ");
+ await testRunner.AndAsync("I filter table Yard Asset:", ((string)(null)), table709, "And ");
 #line hidden
 #line 17
  await testRunner.AndAsync("I select no.1 record Yard Asset table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -190,22 +190,22 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 35
  await testRunner.AndAsync("I select value lookup of Prepped By field", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table705 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table710 = new global::Reqnroll.Table(new string[] {
                             "Person"});
-                table705.AddRow(new string[] {
+                table710.AddRow(new string[] {
                             "PEGBUNA"});
 #line 36
- await testRunner.AndAsync("I filter Person:", ((string)(null)), table705, "And ");
+ await testRunner.AndAsync("I filter Person:", ((string)(null)), table710, "And ");
 #line hidden
 #line 39
  await testRunner.AndAsync("I select no.1 record from Person table", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table706 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table711 = new global::Reqnroll.Table(new string[] {
                             "Additional Info"});
-                table706.AddRow(new string[] {
+                table711.AddRow(new string[] {
                             "Additional Info Testing"});
 #line 40
- await testRunner.AndAsync("I enter Additional info:", ((string)(null)), table706, "And ");
+ await testRunner.AndAsync("I enter Additional info:", ((string)(null)), table711, "And ");
 #line hidden
 #line 43
  await testRunner.AndAsync("I click Confirm dailog button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

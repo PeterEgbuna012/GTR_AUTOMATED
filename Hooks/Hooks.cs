@@ -192,7 +192,7 @@ namespace GTR_AUTOMATED.Hooks
                     });
 
                 // Executor information
-                 var executorJson = """
+                var executorJson = """
                {
                   "type":"NUnit",
                   "buildName":"GTR Automation Run",

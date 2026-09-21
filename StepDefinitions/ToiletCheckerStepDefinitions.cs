@@ -924,6 +924,67 @@ namespace GTR_AUTOMATED.StepDefinitions
 
 
 
+        // Toilet Checker - 'Needs Checking' Flag Step Definitions
+
+
+        [Given("I take screenshot of Toilet Checker Asset Details")]
+        public void GivenITakeScreenshotOfToiletCheckerAssetDetails()
+        {
+            AllureLogger.LogStep("I take screenshot of Toilet Checker Asset Details",
+                pom.TakeScreenshotOfToiletCheckerAssetDetails);
+        }
+
+        [Given(@"I set \(Radio\) field to needs Checking to true")]
+        public void GivenISetRadioFieldToNeedsCheckingToTrue()
+        {
+            AllureLogger.LogStep(
+                "I set Needs Checking to True",
+                () => pom.GivenISetRadioFieldToNeedsCheckingToTrue());
+        }
+
+        [Given("I verify toilet needs checking flag is set to true")]
+        public void GivenIVerifyToiletNeedsCheckingFlagIsSetToTrue()
+        {
+            AllureLogger.LogStep("I verify toilet needs checking flag is set to true",
+                pom.VerifyToiletNeedsCheckingFlagIsSetToTrue);
+        }
+
+        [Given("I take screenshot of Toilet Checker Asset Details with Needs Checking Flag")]
+        public void GivenITakeScreenshotOfToiletCheckerAssetDetailsWithNeedsCheckingFlag()
+        {
+            AllureLogger.LogStep("I take screenshot of Toilet Checker Asset Details with Needs Checking Flag",
+                pom.TakeScreenshotOfToiletCheckerAssetDetailsWithNeedsCheckingFlag);
+        }
+
+        [Given("I select button to change toilet asset status")]
+        public void GivenISelectButtonToChangeToiletAssetStatus()
+        {
+            AllureLogger.LogStep("I select button to change toilet asset status",
+              pom.SelectButtonToChangeToiletAssetStatus);
+        }
+
+        [Given("I take screenshot of Status Change to Unavailable")]
+        public void GivenITakeScreenshotOfStatusChangeToUnavailable()
+        {
+            AllureLogger.LogStep("I take screenshot of Status Change to Unavailable",
+                pom.TakeScreenshotOfStatusChangeToUnavailable);
+        }
+
+
+        [Given("I verify toilet needs checking flag is set to false")]
+        public void GivenIVerifyToiletNeedsCheckingFlagIsSetToFalse()
+        {
+            AllureLogger.LogStep("I verify toilet needs checking flag is set to false",
+                pom.VerifyToiletNeedsCheckingFlagIsSetToFalse);
+        }
+
+        [Given("I take screenshot of Toilet Checker Asset Details with Needs Checking Flag set to false")]
+        public void GivenITakeScreenshotOfToiletCheckerAssetDetailsWithNeedsCheckingFlagSetToFalse()
+        {
+            AllureLogger.LogStep("I take screenshot of Toilet Checker Asset Details with Needs Checking Flag set to false",
+                pom.TakeScreenshotOfToiletCheckerAssetDetailsWithNeedsCheckingFlagSetToFalse);
+        }
+
 
 
 

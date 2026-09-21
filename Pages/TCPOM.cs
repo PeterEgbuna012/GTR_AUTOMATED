@@ -70,24 +70,24 @@ namespace GTR_AUTOMATED.Pages
                       // Wait 5 seconds for the page or element to load
                       Task.Delay(5000).Wait();
 
-                     // Find the Related Work Order element by CSS selector
-                     var relatedWorkOrder = driver.FindElement(By.CssSelector("#m7ec1f31b-tb"));
+                   // Find the Related Toilet Asset element by CSS selector
+                   var ToiletAsset = driver.FindElement(By.CssSelector("#m7ec1f31b-tb"));
 
                     // Get the 'value' attribute of the element
-                    string workOrderNumber = relatedWorkOrder.GetAttribute("value");
+                    string workOrderNumber = ToiletAsset.GetAttribute("value");
 
-                     // Check if the work order number is null or empty
-                     if (string.IsNullOrEmpty(workOrderNumber))
+                   // Check if the Toilet Asset number is null or empty
+                   if (string.IsNullOrEmpty(workOrderNumber))
                      {
-                          throw new Exception("Work Order: Work order number is empty or null.");
+                          throw new Exception("Toilet Asset: Toilet Asset is empty or null.");
                      }
 
-                     // Log success with the work order number
-                     Console.WriteLine("Success: Work order number is " + workOrderNumber);
+                     // Log success with the Toilet Asset number
+                     Console.WriteLine("Success: Toilet Asset number is " + workOrderNumber);
                      }
                      catch (NoSuchElementException ex)
                      {
-                         Console.WriteLine("Error: Work order element not found - " + ex.Message);
+                         Console.WriteLine("Error: Toilet Asset element not found - " + ex.Message);
                          throw;
                      }
                      catch (Exception ex)
@@ -106,24 +106,24 @@ namespace GTR_AUTOMATED.Pages
                // Wait 5 seconds for the page or element to load
                Task.Delay(5000).Wait();
 
-               // Find the Related Work Order element by CSS selector
-               var relatedWorkOrder = driver.FindElement(By.CssSelector("#m7ec1f31b-tb2"));
+               // Find the Related Toilet Asset element by CSS selector
+               var ToiletAsset = driver.FindElement(By.CssSelector("#m7ec1f31b-tb2"));
 
                // Get the 'value' attribute of the element
-               string workOrderNumber = relatedWorkOrder.GetAttribute("value");
+               string workOrderNumber = ToiletAsset.GetAttribute("value");
 
                // Check if the work order number is null or empty
                if (string.IsNullOrEmpty(workOrderNumber))
                {
-                   throw new Exception("Work Order: Work order number is empty or null.");
+                   throw new Exception("Toilet Asset: Toilet Asset description is empty or null.");
                }
 
                // Log success with the work order number
-               Console.WriteLine("Success: Work order number is " + workOrderNumber);
+               Console.WriteLine("Success: Toilet Asset description is " + workOrderNumber);
            }
            catch (NoSuchElementException ex)
            {
-               Console.WriteLine("Error: Work order element not found - " + ex.Message);
+               Console.WriteLine("Error: Toilet Asset element not found - " + ex.Message);
                throw;
            }
            catch (Exception ex)
@@ -141,24 +141,24 @@ namespace GTR_AUTOMATED.Pages
                // Wait 5 seconds for the page or element to load
                Task.Delay(5000).Wait();
 
-               // Find the Related Work Order element by CSS selector
-               var relatedWorkOrder = driver.FindElement(By.CssSelector("#m90cf9237-tb"));
+               // Find the Related Toilet Asset element by CSS selector
+               var relatedToiletAsset = driver.FindElement(By.CssSelector("#m90cf9237-tb"));
 
                // Get the 'value' attribute of the element
-               string workOrderNumber = relatedWorkOrder.GetAttribute("value");
+               string ToiletAsset = relatedToiletAsset.GetAttribute("value");
 
-               // Check if the work order number is null or empty
-               if (string.IsNullOrEmpty(workOrderNumber))
+               // Check if the toilet asset is null or empty
+               if (string.IsNullOrEmpty(ToiletAsset))
                {
                    throw new Exception("Status: reason is empty or null.");
                }
 
                // Log success with the work order number
-               Console.WriteLine("Success: Work order number is " + workOrderNumber);
+               Console.WriteLine("Success: Toilet Asset is " + ToiletAsset);
            }
            catch (NoSuchElementException ex)
            {
-               Console.WriteLine("Error: Work order element not found - " + ex.Message);
+               Console.WriteLine("Error: Toilet Asset element not found - " + ex.Message);
                throw;
            }
            catch (Exception ex)
@@ -176,24 +176,24 @@ namespace GTR_AUTOMATED.Pages
                // Wait 5 seconds for the page or element to load
                Task.Delay(5000).Wait();
 
-               // Find the Related Work Order element by CSS selector
-               var relatedWorkOrder = driver.FindElement(By.CssSelector("#meab0794-tb"));
+               // Find the Related Toilet Asset element by CSS selector
+               var relatedToiletAsset = driver.FindElement(By.CssSelector("#meab0794-tb"));
 
                // Get the 'value' attribute of the element
-               string workOrderNumber = relatedWorkOrder.GetAttribute("value");
+               string ToiletAsset = relatedToiletAsset.GetAttribute("value");
 
-               // Check if the work order number is null or empty
-               if (string.IsNullOrEmpty(workOrderNumber))
+               // Check if the toilet asset is null or empty
+               if (string.IsNullOrEmpty(ToiletAsset))
                {
                    throw new Exception("reason: reason is empty or null.");
                }
 
-               // Log success with the work order number
-               Console.WriteLine("Success: Work order number is " + workOrderNumber);
+               // Log success with the toilet asset
+               Console.WriteLine("Success: Toilet Asset is " + ToiletAsset);
            }
            catch (NoSuchElementException ex)
            {
-               Console.WriteLine("Error: Work order element not found - " + ex.Message);
+               Console.WriteLine("Error: Toilet Asset element not found - " + ex.Message);
                throw;
            }
            catch (Exception ex)
@@ -248,24 +248,24 @@ namespace GTR_AUTOMATED.Pages
                // Wait 5 seconds for the page or element to load
                Task.Delay(5000).Wait();
 
-               // Find the Related Work Order element by CSS selector
-               var relatedWorkOrder = driver.FindElement(By.CssSelector("#meab0794-tb"));
+               // Find the Related Toilet Asset element by CSS selector
+               var relatedToiletAsset = driver.FindElement(By.CssSelector("#meab0794-tb"));
 
                // Get the 'value' attribute of the element
-               string workOrderNumber = relatedWorkOrder.GetAttribute("value");
+               string ToiletAsset = relatedToiletAsset.GetAttribute("value");
 
-               // Check if the work order number is null or empty
-               if (string.IsNullOrEmpty(workOrderNumber))
+               // Check if the toilet asset is null or empty
+               if (string.IsNullOrEmpty(ToiletAsset))
                {
                    throw new Exception("Toilet Checked Date: reason is empty or null.");
                }
 
-               // Log success with the work order number
-               Console.WriteLine("Success: Work order number is " + workOrderNumber);
+               // Log success with the toilet asset
+               Console.WriteLine("Success: Toilet Asset is " + ToiletAsset);
            }
            catch (NoSuchElementException ex)
            {
-               Console.WriteLine("Error: Work order element not found - " + ex.Message);
+               Console.WriteLine("Error: Toilet Asset element not found - " + ex.Message);
                throw;
            }
            catch (Exception ex)
@@ -2222,6 +2222,207 @@ namespace GTR_AUTOMATED.Pages
       });
 
 
+
+
+        // Toilet Checker - 'Needs Checking' Flag POM Steps
+
+
+          public void TakeScreenshotOfToiletCheckerAssetDetails() =>
+         AllureLogger.LogStep("Capture Screenshot for UAT-TAS-013SC01", () =>
+         {
+             try
+             {
+                 var takescreenshot = new TakeScreenShotPOM(driver);
+                 string successPath = @"C:\Documents\GTR_AUTOMATED\Screenshots\UAT-TAS-013SC01.png";
+                 takescreenshot.TakeScreenshot(driver, successPath);
+             }
+             catch (Exception ex)
+             {
+                 Console.WriteLine($"Screenshot failed: {ex.Message}");
+                 // Attempt fallback screenshot on failure
+                 var failureScreenshotPath = @"C:\Documents\GTR_AUTOMATED\Screenshots\Failures\UAT-TAS-013SC01_Failure.png";
+                 var takescreenshot = new TakeScreenShotPOM(driver);
+                 takescreenshot.TakeScreenshot(driver, failureScreenshotPath);
+                 // Optional: Rethrow if test should fail
+                 throw new Exception("Test failed while taking screenshot.", ex);
+             }
+         });
+
+        public void GivenISetRadioFieldToNeedsCheckingToTrue()
+        {
+            AllureLogger.LogStep(
+                "Set Needs Checking to True",
+                () =>
+                {
+                    By needsCheckingLocator =
+                        By.XPath("//img[starts-with(@alt,'Needs Checking:')]");
+
+                    IWebElement checkbox = driver.FindElement(needsCheckingLocator);
+
+                    if (checkbox.GetAttribute("alt").Contains("unchecked"))
+                    {
+                        checkbox.Click();
+                    }
+
+                    Task.Delay(3000).Wait();
+                });
+        }
+
+        public void VerifyToiletNeedsCheckingFlagIsSetToTrue()
+        {
+            AllureLogger.LogStep(
+                "Verify Needs Checking flag is checked",
+                () =>
+                {
+                    By needsCheckingLocator =
+                        By.XPath("//a[@role='checkbox'][img[contains(@alt,'Needs Checking: checked')]]");
+
+                    WebDriverWait wait = new WebDriverWait(
+                        driver,
+                        TimeSpan.FromSeconds(50));
+
+                    IWebElement needsChecking =
+                        wait.Until(SeleniumWaits.ElementIsVisible(needsCheckingLocator));
+
+                    wait.Until(driver =>
+                        needsChecking.GetAttribute("aria-checked") == "true");
+
+                    Assert.That(
+                        needsChecking.GetAttribute("aria-checked"),
+                        Is.EqualTo("true"),
+                        "Expected Needs Checking flag to be set to true.");
+                });
+        }
+
+
+        public void TakeScreenshotOfToiletCheckerAssetDetailsWithNeedsCheckingFlag() =>
+       AllureLogger.LogStep("Capture Screenshot for UAT-TAS-013SC02", () =>
+       {
+           try
+           {
+               var takescreenshot = new TakeScreenShotPOM(driver);
+               string successPath = @"C:\Documents\GTR_AUTOMATED\Screenshots\UAT-TAS-013SC02.png";
+               takescreenshot.TakeScreenshot(driver, successPath);
+           }
+           catch (Exception ex)
+           {
+               Console.WriteLine($"Screenshot failed: {ex.Message}");
+               // Attempt fallback screenshot on failure
+               var failureScreenshotPath = @"C:\Documents\GTR_AUTOMATED\Screenshots\Failures\UAT-TAS-013SC02_Failure.png";
+               var takescreenshot = new TakeScreenShotPOM(driver);
+               takescreenshot.TakeScreenshot(driver, failureScreenshotPath);
+               // Optional: Rethrow if test should fail
+               throw new Exception("Test failed while taking screenshot.", ex);
+           }
+       });
+
+
+          public void SelectButtonToChangeToiletAssetStatus() =>
+          AllureLogger.LogStep(
+             "I select button to change toilet asset status",
+              () =>
+              {
+                   By changeStatusLocator =
+                   By.XPath("//span[@mxevent='click' and contains(@class,'anchor')][.//img[@alt='Change Status']]");
+
+                   WebDriverWait wait = new WebDriverWait(
+                      driver,
+                      TimeSpan.FromSeconds(50));
+
+                   IWebElement changeStatusButton =
+                   wait.Until(
+                        SeleniumWaits.ElementToBeClickable(
+                        changeStatusLocator));
+
+                   ((IJavaScriptExecutor)driver)
+                   .ExecuteScript(
+                       "arguments[0].scrollIntoView({block:'center'});",
+                        changeStatusButton);
+
+                   changeStatusButton.Click();
+                   AllureLogger.LogInfo(
+                   "Successfully clicked Change Status button.");
+              });
+
+
+        public void VerifyToiletNeedsCheckingFlagIsSetToFalse()
+        {
+            AllureLogger.LogStep(
+                "Verify Needs Checking flag is unchecked",
+                () =>
+                {
+                    By needsCheckingLocator =
+                        By.XPath("//a[@role='checkbox'][img[contains(@alt,'Needs Checking: unchecked')]]");
+
+                    WebDriverWait wait = new WebDriverWait(
+                        driver,
+                        TimeSpan.FromSeconds(50));
+
+                    IWebElement needsChecking =
+                        wait.Until(SeleniumWaits.ElementIsVisible(needsCheckingLocator));
+
+                    wait.Until(driver =>
+                        needsChecking.GetAttribute("aria-checked") == "false");
+
+                    var image = needsChecking.FindElement(By.TagName("img"));
+
+                    Assert.Multiple(() =>
+                    {
+                        Assert.That(
+                            needsChecking.GetAttribute("aria-checked"),
+                            Is.EqualTo("false"),
+                            "Expected Needs Checking flag to be unchecked.");
+
+                        Assert.That(
+                            image.GetAttribute("alt"),
+                            Does.Contain("unchecked"),
+                            "Expected Needs Checking image to be unchecked.");
+                    });
+                });
+        }
+
+
+         public void TakeScreenshotOfToiletCheckerAssetDetailsWithNeedsCheckingFlagSetToFalse() =>
+       AllureLogger.LogStep("Capture Screenshot for UAT-TAS-013SC03", () =>
+       {
+           try
+           {
+               var takescreenshot = new TakeScreenShotPOM(driver);
+               string successPath = @"C:\Documents\GTR_AUTOMATED\Screenshots\UAT-TAS-013SC03.png";
+               takescreenshot.TakeScreenshot(driver, successPath);
+           }
+           catch (Exception ex)
+           {
+               Console.WriteLine($"Screenshot failed: {ex.Message}");
+               // Attempt fallback screenshot on failure
+               var failureScreenshotPath = @"C:\Documents\GTR_AUTOMATED\Screenshots\Failures\UAT-TAS-013SC03_Failure.png";
+               var takescreenshot = new TakeScreenShotPOM(driver);
+               takescreenshot.TakeScreenshot(driver, failureScreenshotPath);
+               // Optional: Rethrow if test should fail
+               throw new Exception("Test failed while taking screenshot.", ex);
+           }
+       });
+
+         public void TakeScreenshotOfStatusChangeToUnavailable() =>
+       AllureLogger.LogStep("Capture Screenshot for UAT-TAS-013SC04", () =>
+       {
+           try
+           {
+               var takescreenshot = new TakeScreenShotPOM(driver);
+               string successPath = @"C:\Documents\GTR_AUTOMATED\Screenshots\UAT-TAS-013SC04.png";
+               takescreenshot.TakeScreenshot(driver, successPath);
+           }
+           catch (Exception ex)
+           {
+               Console.WriteLine($"Screenshot failed: {ex.Message}");
+               // Attempt fallback screenshot on failure
+               var failureScreenshotPath = @"C:\Documents\GTR_AUTOMATED\Screenshots\Failures\UAT-TAS-013SC04_Failure.png";
+               var takescreenshot = new TakeScreenShotPOM(driver);
+               takescreenshot.TakeScreenshot(driver, failureScreenshotPath);
+               // Optional: Rethrow if test should fail
+               throw new Exception("Test failed while taking screenshot.", ex);
+           }
+       });
 
 
 

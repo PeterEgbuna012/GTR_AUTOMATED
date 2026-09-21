@@ -32,10 +32,11 @@ namespace GTR_AUTOMATED.StepDefinitions
         [Given("I filter Report table:")]
         public void GivenIFilterReportTable(Table table)
         {
-            string Report = table.Rows[0]["Report"];
+            string Report = table.Rows[0]["Reports"];
             AllureLogger.LogStep($"I filter Report table: {Report}", () =>
             pom.FilterTableReports(Report));
         }
+
 
         [Given("I select no. {int} record from Reports table records")]
         public void GivenISelectNo_RecordFromReportsTableRecords(int recordNumber)
