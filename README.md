@@ -269,6 +269,11 @@ QA Consultant
 
 ---
 
+## Access
+Access required? Contact Peter Egbuna or submit a request via Teams/Email.
+
+---
+
 ## Disclaimer
 
 This repository contains automation assets intended for quality assurance, testing, and validation activities. Usage, modification, and distribution should comply with project governance, security requirements, and organizational standards.
