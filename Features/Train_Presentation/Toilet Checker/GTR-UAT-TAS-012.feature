@@ -1,7 +1,7 @@
 ﻿Feature: GTR-UAT-TAS-012 - Toilet Checker Email Notification to Downstream Locations with Turnaround Capability and Stop Time Over 10 Minutes
 
 An email notification is sent to downstream locations with turnaround capability and a stop time over 10 minutes to review and address reported issues.
-<<<<<<< HEAD
+
 @allure.label.epic:ToiletChecker
 @allure.label.feature:ChangestatusofaToiletAsset
 @allure.label.story:ChangestatusofaToiletAsset

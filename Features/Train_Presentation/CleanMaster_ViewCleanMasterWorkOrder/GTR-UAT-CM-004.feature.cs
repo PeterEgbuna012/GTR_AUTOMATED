@@ -156,12 +156,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 14
      await testRunner.AndAsync("I open application Clean Master Application (MXR)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table600 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table602 = new global::Reqnroll.Table(new string[] {
                             "Work Type"});
-                table600.AddRow(new string[] {
+                table602.AddRow(new string[] {
                             "=CWM"});
 #line 15
-      await testRunner.AndAsync("I filter Work Type field:", ((string)(null)), table600, "And ");
+      await testRunner.AndAsync("I filter Work Type field:", ((string)(null)), table602, "And ");
 #line hidden
 #line 18
      await testRunner.AndAsync("I select no. 1 record from Clean Master table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

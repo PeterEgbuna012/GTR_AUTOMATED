@@ -161,12 +161,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 17
     await testRunner.AndAsync("I select value option Unit ID field", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table602 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table604 = new global::Reqnroll.Table(new string[] {
                             "ID"});
-                table602.AddRow(new string[] {
+                table604.AddRow(new string[] {
                             "171"});
 #line 18
-     await testRunner.AndAsync("I filter table Unit ID:", ((string)(null)), table602, "And ");
+     await testRunner.AndAsync("I filter table Unit ID:", ((string)(null)), table604, "And ");
 #line hidden
 #line 21
     await testRunner.AndAsync("I select no. 1 record from Unit ID table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

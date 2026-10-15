@@ -156,12 +156,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 13
  await testRunner.AndAsync("I open application Depot Management (BRDF)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table831 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table836 = new global::Reqnroll.Table(new string[] {
                             "Yard Asset"});
-                table831.AddRow(new string[] {
+                table836.AddRow(new string[] {
                             "BATTERSEA-STWRT-YARD"});
 #line 14
- await testRunner.AndAsync("I filter table Yard Asset:", ((string)(null)), table831, "And ");
+ await testRunner.AndAsync("I filter table Yard Asset:", ((string)(null)), table836, "And ");
 #line hidden
 #line 17
  await testRunner.AndAsync("I select no.1 record Yard Asset table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

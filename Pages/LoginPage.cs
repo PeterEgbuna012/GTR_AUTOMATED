@@ -213,7 +213,7 @@ namespace GTR_Automated_Tests.Pages
 
         public void LoginAsCleanMaster() => LoginAs("ANDREW.BOLTON@GTRAILWAY.COM", "arcad1s2026");
 
-        public void PanelOperationsManager() => LoginAs("POM-UAT1", "maximo");
+        public void PanelOperationsManager() => LoginAs("PEGBUNA", "maximo");
 
         public void FleetControl() => LoginAs("PEGBUNA", "maximo");
 

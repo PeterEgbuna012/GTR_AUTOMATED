@@ -156,12 +156,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 14
  await testRunner.AndAsync("I open application Depot Management (BRDF)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table672 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table677 = new global::Reqnroll.Table(new string[] {
                             "Yard Asset"});
-                table672.AddRow(new string[] {
+                table677.AddRow(new string[] {
                             "STREATHAM-HILL-YARD"});
 #line 15
- await testRunner.AndAsync("I filter table Yard Asset:", ((string)(null)), table672, "And ");
+ await testRunner.AndAsync("I filter table Yard Asset:", ((string)(null)), table677, "And ");
 #line hidden
 #line 18
  await testRunner.AndAsync("I select no.1 record Yard Asset table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -169,12 +169,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 19
  await testRunner.AndAsync("I select Depot Menu Option change Status", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table673 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table678 = new global::Reqnroll.Table(new string[] {
                             "Memo"});
-                table673.AddRow(new string[] {
+                table678.AddRow(new string[] {
                             "TESTING"});
 #line 21
- await testRunner.AndAsync("I enter Memo:", ((string)(null)), table673, "And ");
+ await testRunner.AndAsync("I enter Memo:", ((string)(null)), table678, "And ");
 #line hidden
 #line 24
  await testRunner.AndAsync("I select Status as BLOCKED", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -194,12 +194,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 29
  await testRunner.AndAsync("I select Status as ACTIVE", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table674 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table679 = new global::Reqnroll.Table(new string[] {
                             "Memo"});
-                table674.AddRow(new string[] {
+                table679.AddRow(new string[] {
                             "TESTING"});
 #line 30
- await testRunner.AndAsync("I enter Memo details:", ((string)(null)), table674, "And ");
+ await testRunner.AndAsync("I enter Memo details:", ((string)(null)), table679, "And ");
 #line hidden
 #line 33
  await testRunner.AndAsync("I press OK dialog button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

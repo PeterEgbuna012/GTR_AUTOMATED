@@ -159,24 +159,24 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 15
    await testRunner.AndAsync("I select action Run Reports", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table376 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table378 = new global::Reqnroll.Table(new string[] {
                             "Report"});
-                table376.AddRow(new string[] {
+                table378.AddRow(new string[] {
                             "Total Time per Task/Block/Exam"});
 #line 16
-   await testRunner.AndAsync("I filter Report table:", ((string)(null)), table376, "And ");
+   await testRunner.AndAsync("I filter Report table:", ((string)(null)), table378, "And ");
 #line hidden
 #line 19
    await testRunner.AndAsync("I select no. 1 record from Reports table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table377 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table379 = new global::Reqnroll.Table(new string[] {
                             "Start Date",
                             "End Date"});
-                table377.AddRow(new string[] {
+                table379.AddRow(new string[] {
                             "01/01/2026",
                             "01/08/2026"});
 #line 20
-   await testRunner.AndAsync("I enter Report Start Date and End Date:", ((string)(null)), table377, "And ");
+   await testRunner.AndAsync("I enter Report Start Date and End Date:", ((string)(null)), table379, "And ");
 #line hidden
 #line 23
    await testRunner.AndAsync("I submit Total Time per Task Block Exam Report", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

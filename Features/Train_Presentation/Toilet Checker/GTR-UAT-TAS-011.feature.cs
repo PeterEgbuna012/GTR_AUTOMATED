@@ -161,12 +161,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 16
  await testRunner.AndAsync("I open application Business Rules (BRDB)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table645 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table647 = new global::Reqnroll.Table(new string[] {
                             "Business Rules"});
-                table645.AddRow(new string[] {
+                table647.AddRow(new string[] {
                             "MXRSANDMANAGEMENTAREA1"});
 #line 17
- await testRunner.AndAsync("I filter table Business Rules (BRDB):", ((string)(null)), table645, "And ");
+ await testRunner.AndAsync("I filter table Business Rules (BRDB):", ((string)(null)), table647, "And ");
 #line hidden
 #line 20
    await testRunner.AndAsync("I select no. 1 record from Business Rules table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -174,12 +174,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 21
    await testRunner.AndAsync("I select no. 1 record to view detials", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table646 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table648 = new global::Reqnroll.Table(new string[] {
                             "Email"});
-                table646.AddRow(new string[] {
+                table648.AddRow(new string[] {
                             "peter.egbuna@arcadis.com"});
 #line 22
-   await testRunner.AndAsync("I add Email Details:", ((string)(null)), table646, "And ");
+   await testRunner.AndAsync("I add Email Details:", ((string)(null)), table648, "And ");
 #line hidden
 #line 25
    await testRunner.AndAsync("I save record", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -187,12 +187,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 26
    await testRunner.AndAsync("I open application Toilet Checker (MXR)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table647 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table649 = new global::Reqnroll.Table(new string[] {
                             "Toilet Checker"});
-                table647.AddRow(new string[] {
+                table649.AddRow(new string[] {
                             "377113"});
 #line 27
-   await testRunner.AndAsync("I filter table Toilet Checker:", ((string)(null)), table647, "And ");
+   await testRunner.AndAsync("I filter table Toilet Checker:", ((string)(null)), table649, "And ");
 #line hidden
 #line 30
    await testRunner.AndAsync("I select change toilet asset statuse button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -203,12 +203,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 32
    await testRunner.AndAsync("I select unavailable", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table648 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table650 = new global::Reqnroll.Table(new string[] {
                             "Toilet Checker"});
-                table648.AddRow(new string[] {
+                table650.AddRow(new string[] {
                             "Water Tank Empty"});
 #line 33
-   await testRunner.AndAsync("I filter table Toilet Unavailable Reason:", ((string)(null)), table648, "And ");
+   await testRunner.AndAsync("I filter table Toilet Unavailable Reason:", ((string)(null)), table650, "And ");
 #line hidden
 #line 36
    await testRunner.AndAsync("I press button ok", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -290,12 +290,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 63
  await testRunner.AndAsync("I open application Business Rules (BRDB)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table649 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table651 = new global::Reqnroll.Table(new string[] {
                             "Business Rules"});
-                table649.AddRow(new string[] {
+                table651.AddRow(new string[] {
                             "MXRSANDMANAGEMENTAREA1"});
 #line 64
- await testRunner.AndAsync("I filter table Business Rules (BRDB):", ((string)(null)), table649, "And ");
+ await testRunner.AndAsync("I filter table Business Rules (BRDB):", ((string)(null)), table651, "And ");
 #line hidden
 #line 67
    await testRunner.AndAsync("I select no. 1 record from Business Rules table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -303,12 +303,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 68
    await testRunner.AndAsync("I select no. 1 record to view detials", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table650 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table652 = new global::Reqnroll.Table(new string[] {
                             "Email"});
-                table650.AddRow(new string[] {
+                table652.AddRow(new string[] {
                             "peter.egbuna@arcadis.com"});
 #line 69
-   await testRunner.AndAsync("I add Email Details:", ((string)(null)), table650, "And ");
+   await testRunner.AndAsync("I add Email Details:", ((string)(null)), table652, "And ");
 #line hidden
 #line 72
    await testRunner.AndAsync("I save record", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

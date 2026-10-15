@@ -68,6 +68,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="Features\Maintenace &amp; Production\Sanding and Toilet Availability Report\" />
 	  <Folder Include="Features\Train_Presentation\Slots\" />
 	</ItemGroup>
 

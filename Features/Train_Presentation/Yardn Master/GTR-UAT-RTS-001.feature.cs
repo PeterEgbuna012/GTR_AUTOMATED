@@ -155,12 +155,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 14
  await testRunner.AndAsync("I open application Depot Management (BRDF)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table668 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table673 = new global::Reqnroll.Table(new string[] {
                             "Yard Asset"});
-                table668.AddRow(new string[] {
+                table673.AddRow(new string[] {
                             "LITTLEHAMPTON-YARD"});
 #line 15
- await testRunner.AndAsync("I filter table Yard Asset:", ((string)(null)), table668, "And ");
+ await testRunner.AndAsync("I filter table Yard Asset:", ((string)(null)), table673, "And ");
 #line hidden
 #line 18
  await testRunner.AndAsync("I select no.1 record Yard Asset table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -171,14 +171,14 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 20
  await testRunner.AndAsync("I add Gap to the Road", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table669 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table674 = new global::Reqnroll.Table(new string[] {
                             "Gap Memo",
                             "Poistion"});
-                table669.AddRow(new string[] {
+                table674.AddRow(new string[] {
                             "TESTING",
                             "1"});
 #line 21
- await testRunner.AndAsync("I enter Gap Details:", ((string)(null)), table669, "And ");
+ await testRunner.AndAsync("I enter Gap Details:", ((string)(null)), table674, "And ");
 #line hidden
 #line 24
  await testRunner.AndAsync("I select ok dialog button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
