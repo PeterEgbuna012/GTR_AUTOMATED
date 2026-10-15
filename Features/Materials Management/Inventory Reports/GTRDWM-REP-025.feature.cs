@@ -158,22 +158,22 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 15
    await testRunner.AndAsync("I select action Run Reports", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table493 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table495 = new global::Reqnroll.Table(new string[] {
                             "Reports"});
-                table493.AddRow(new string[] {
+                table495.AddRow(new string[] {
                             "FOS Report"});
 #line 16
-   await testRunner.AndAsync("I filter table Reports:", ((string)(null)), table493, "And ");
+   await testRunner.AndAsync("I filter table Reports:", ((string)(null)), table495, "And ");
 #line hidden
 #line 19
    await testRunner.AndAsync("I select no. 1 record from Reports table record", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table494 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table496 = new global::Reqnroll.Table(new string[] {
                             "Item Number"});
-                table494.AddRow(new string[] {
+                table496.AddRow(new string[] {
                             "=007/042021"});
 #line 20
-   await testRunner.AndAsync("I enter Item number:", ((string)(null)), table494, "And ");
+   await testRunner.AndAsync("I enter Item number:", ((string)(null)), table496, "And ");
 #line hidden
 #line 23
    await testRunner.AndAsync("I submit FOS Report", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

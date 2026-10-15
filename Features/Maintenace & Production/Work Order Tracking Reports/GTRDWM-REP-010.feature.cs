@@ -159,22 +159,22 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 15
    await testRunner.AndAsync("I select action Run Reports", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table363 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table365 = new global::Reqnroll.Table(new string[] {
                             "Report"});
-                table363.AddRow(new string[] {
+                table365.AddRow(new string[] {
                             "Frequency Based Maintenance Plan"});
 #line 16
-   await testRunner.AndAsync("I filter Report table:", ((string)(null)), table363, "And ");
+   await testRunner.AndAsync("I filter Report table:", ((string)(null)), table365, "And ");
 #line hidden
 #line 19
    await testRunner.AndAsync("I select no. 1 record from Reports table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table364 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table366 = new global::Reqnroll.Table(new string[] {
                             "Class"});
-                table364.AddRow(new string[] {
+                table366.AddRow(new string[] {
                             "=A2"});
 #line 20
-   await testRunner.AndAsync("I enter class:", ((string)(null)), table364, "And ");
+   await testRunner.AndAsync("I enter class:", ((string)(null)), table366, "And ");
 #line hidden
 #line 23
    await testRunner.AndAsync("I submit Frequency Based Maintenance Plan", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

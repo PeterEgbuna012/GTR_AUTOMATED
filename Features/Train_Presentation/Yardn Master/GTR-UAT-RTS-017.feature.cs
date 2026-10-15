@@ -155,12 +155,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 13
  await testRunner.AndAsync("I open application Depot Management (BRDF)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table727 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table729 = new global::Reqnroll.Table(new string[] {
                             "Yard Asset"});
-                table727.AddRow(new string[] {
+                table729.AddRow(new string[] {
                             "BATTERSEA-STWRT-YARD"});
 #line 14
- await testRunner.AndAsync("I filter table Yard Asset:", ((string)(null)), table727, "And ");
+ await testRunner.AndAsync("I filter table Yard Asset:", ((string)(null)), table729, "And ");
 #line hidden
 #line 17
  await testRunner.AndAsync("I select no.1 record Yard Asset table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -171,12 +171,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 19
  await testRunner.AndAsync("I select action Manage Non-Arrival", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table728 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table730 = new global::Reqnroll.Table(new string[] {
                             "Comment"});
-                table728.AddRow(new string[] {
+                table730.AddRow(new string[] {
                             "Non-Arrival Test"});
 #line 20
- await testRunner.AndAsync("I Add Memo:", ((string)(null)), table728, "And ");
+ await testRunner.AndAsync("I Add Memo:", ((string)(null)), table730, "And ");
 #line hidden
 #line 23
  await testRunner.AndAsync("I select Confirm Non-Arrival button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

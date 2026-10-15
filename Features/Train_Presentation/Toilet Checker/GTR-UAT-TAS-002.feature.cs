@@ -156,12 +156,12 @@ namespace GTR_AUTOMATED.Features.Train_Presentation.ToiletChecker
 #line 14
  await testRunner.AndAsync("I open application Toilet Checker (MXR)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table612 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table614 = new global::Reqnroll.Table(new string[] {
                             "Toilet Checker"});
-                table612.AddRow(new string[] {
+                table614.AddRow(new string[] {
                             "171804"});
 #line 15
- await testRunner.AndAsync("I filter table Toilet Checker:", ((string)(null)), table612, "And ");
+ await testRunner.AndAsync("I filter table Toilet Checker:", ((string)(null)), table614, "And ");
 #line hidden
 #line 18
  await testRunner.AndAsync("I select change toilet asset statuse button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -172,12 +172,12 @@ namespace GTR_AUTOMATED.Features.Train_Presentation.ToiletChecker
 #line 20
  await testRunner.AndAsync("I select unavailable", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table613 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table615 = new global::Reqnroll.Table(new string[] {
                             "Toilet Checker"});
-                table613.AddRow(new string[] {
+                table615.AddRow(new string[] {
                             "Water Tank Empty"});
 #line 21
- await testRunner.AndAsync("I filter table Toilet Unavailable Reason:", ((string)(null)), table613, "And ");
+ await testRunner.AndAsync("I filter table Toilet Unavailable Reason:", ((string)(null)), table615, "And ");
 #line hidden
 #line 24
  await testRunner.AndAsync("I press button ok", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

@@ -168,12 +168,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 18
    await testRunner.AndAsync("I choose Select Value from Detail Menu of location", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table390 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table392 = new global::Reqnroll.Table(new string[] {
                             "location"});
-                table390.AddRow(new string[] {
+                table392.AddRow(new string[] {
                             "MAT-BI-DIRTY"});
 #line 19
-   await testRunner.AndAsync("I filter table location:", ((string)(null)), table390, "And ");
+   await testRunner.AndAsync("I filter table location:", ((string)(null)), table392, "And ");
 #line hidden
 #line 22
       await testRunner.AndAsync("I select no. 1 record from location table record", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

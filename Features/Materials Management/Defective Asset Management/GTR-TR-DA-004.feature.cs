@@ -157,14 +157,14 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 14
   await testRunner.AndAsync("I open application Despatches (MXR) from Fav Menu", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table404 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table406 = new global::Reqnroll.Table(new string[] {
                             "Despatches",
                             "Status"});
-                table404.AddRow(new string[] {
+                table406.AddRow(new string[] {
                             "MAT-HE-DIRTY",
                             "=DESPATCHED"});
 #line 15
-  await testRunner.AndAsync("I filter table Despatches:", ((string)(null)), table404, "And ");
+  await testRunner.AndAsync("I filter table Despatches:", ((string)(null)), table406, "And ");
 #line hidden
 #line 18
      await testRunner.AndAsync("I select no. 3 record from Despatches table record", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

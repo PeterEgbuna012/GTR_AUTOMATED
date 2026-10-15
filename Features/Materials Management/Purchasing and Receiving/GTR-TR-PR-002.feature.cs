@@ -156,16 +156,16 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 14
  await testRunner.AndAsync("I open application Receiving (Tr)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table506 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table508 = new global::Reqnroll.Table(new string[] {
                             "PO",
                             "PO Status",
                             "Receipts"});
-                table506.AddRow(new string[] {
+                table508.AddRow(new string[] {
                             "SU",
                             "=APPR",
                             "PARTIAL"});
 #line 16
- await testRunner.AndAsync("I filter Receiving (Tr):", ((string)(null)), table506, "And ");
+ await testRunner.AndAsync("I filter Receiving (Tr):", ((string)(null)), table508, "And ");
 #line hidden
 #line 19
     await testRunner.AndAsync("I select no. 1 record from PO Item table record", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -173,14 +173,14 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 20
  await testRunner.AndAsync("I select Ordered Items button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table507 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table509 = new global::Reqnroll.Table(new string[] {
                             "Delivery Note",
                             "Remarks Note"});
-                table507.AddRow(new string[] {
+                table509.AddRow(new string[] {
                             "TEST AUTO",
                             "Receiving New Consumable Material Auto Test"});
 #line 21
- await testRunner.AndAsync("I enter  delivery note:", ((string)(null)), table507, "And ");
+ await testRunner.AndAsync("I enter  delivery note:", ((string)(null)), table509, "And ");
 #line hidden
 #line 24
  await testRunner.AndAsync("I select no. 1 record from PO Item to receive table record", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -200,12 +200,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 31
  await testRunner.AndAsync("I select action button Run Report", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table508 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table510 = new global::Reqnroll.Table(new string[] {
                             "Report"});
-                table508.AddRow(new string[] {
+                table510.AddRow(new string[] {
                             "Goods Receipt Label Report"});
 #line 32
-  await testRunner.AndAsync("I filter table Report:", ((string)(null)), table508, "And ");
+  await testRunner.AndAsync("I filter table Report:", ((string)(null)), table510, "And ");
 #line hidden
 #line 35
     await testRunner.AndAsync("I select no. 1 from Reports table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

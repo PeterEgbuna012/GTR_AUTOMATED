@@ -159,22 +159,22 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 15
  await testRunner.AndAsync("I select action Run Reports", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table1 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table345 = new global::Reqnroll.Table(new string[] {
                             "Reports"});
-                table1.AddRow(new string[] {
+                table345.AddRow(new string[] {
                             "Train Toilet Availability Report"});
 #line 16
- await testRunner.AndAsync("I filter Reports:", ((string)(null)), table1, "And ");
+ await testRunner.AndAsync("I filter Reports:", ((string)(null)), table345, "And ");
 #line hidden
 #line 19
  await testRunner.AndAsync("I select no. 1 record from Train Toilet Availability Reports table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table2 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table346 = new global::Reqnroll.Table(new string[] {
                             "Area"});
-                table2.AddRow(new string[] {
+                table346.AddRow(new string[] {
                             "=SOUTHERN"});
 #line 20
- await testRunner.AndAsync("I enter Area:", ((string)(null)), table2, "And ");
+ await testRunner.AndAsync("I enter Area:", ((string)(null)), table346, "And ");
 #line hidden
 #line 23
     await testRunner.AndAsync("I set (Radio) field to \"Immediate\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

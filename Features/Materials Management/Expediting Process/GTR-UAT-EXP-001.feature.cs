@@ -157,12 +157,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 14
    await testRunner.AndAsync("I open application Organizations (Tr)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table405 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table407 = new global::Reqnroll.Table(new string[] {
                             "Description"});
-                table405.AddRow(new string[] {
+                table407.AddRow(new string[] {
                             "GTR"});
 #line 15
-    await testRunner.AndAsync("I filter table Organizations (Tr):", ((string)(null)), table405, "And ");
+    await testRunner.AndAsync("I filter table Organizations (Tr):", ((string)(null)), table407, "And ");
 #line hidden
 #line 18
    await testRunner.AndAsync("I select no. 1 record from Organizations (Tr) table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -170,14 +170,14 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 19
    await testRunner.AndAsync("I Select Expedite Options", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table406 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table408 = new global::Reqnroll.Table(new string[] {
                             "Store Lead Time",
                             "store buff day"});
-                table406.AddRow(new string[] {
+                table408.AddRow(new string[] {
                             "14",
                             "7"});
 #line 21
-   await testRunner.AndAsync("I enter following Expedite Options data:", ((string)(null)), table406, "And ");
+   await testRunner.AndAsync("I enter following Expedite Options data:", ((string)(null)), table408, "And ");
 #line hidden
 #line 24
     await testRunner.AndAsync("I submit record", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

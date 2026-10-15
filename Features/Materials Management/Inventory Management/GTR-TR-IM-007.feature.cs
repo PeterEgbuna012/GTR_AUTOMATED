@@ -157,12 +157,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 15
    await testRunner.AndAsync("I open application shipment receiving from Fav Menu", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table491 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table493 = new global::Reqnroll.Table(new string[] {
                             "Shipment Receiving"});
-                table491.AddRow(new string[] {
+                table493.AddRow(new string[] {
                             "007/042021"});
 #line 16
-    await testRunner.AndAsync("I filter table shipment receiving:", ((string)(null)), table491, "And ");
+    await testRunner.AndAsync("I filter table shipment receiving:", ((string)(null)), table493, "And ");
 #line hidden
 #line 19
       await testRunner.AndAsync("I select no. 1 record from shipment receiving table record", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

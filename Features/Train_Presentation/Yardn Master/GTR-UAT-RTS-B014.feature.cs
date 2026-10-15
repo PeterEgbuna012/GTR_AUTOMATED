@@ -153,12 +153,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 9
  await testRunner.AndAsync("I open application Service Management (BRDF)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table860 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table862 = new global::Reqnroll.Table(new string[] {
                             "Yard Asset"});
-                table860.AddRow(new string[] {
+                table862.AddRow(new string[] {
                             "HORNSEY-YARD"});
 #line 10
- await testRunner.AndAsync("I filter table Service Management:", ((string)(null)), table860, "And ");
+ await testRunner.AndAsync("I filter table Service Management:", ((string)(null)), table862, "And ");
 #line hidden
 #line 13
  await testRunner.AndAsync("I select no.1 record Service Management table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -175,43 +175,43 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 21
  await testRunner.AndAsync("I select value lookup of Destination field", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table861 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table863 = new global::Reqnroll.Table(new string[] {
                             "Destination"});
-                table861.AddRow(new string[] {
+                table863.AddRow(new string[] {
                             "HOVE-YARD"});
 #line 22
- await testRunner.AndAsync("I filter Destination:", ((string)(null)), table861, "And ");
+ await testRunner.AndAsync("I filter Destination:", ((string)(null)), table863, "And ");
 #line hidden
 #line 25
     await testRunner.AndAsync("I select no.1 record from Destination table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table862 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table864 = new global::Reqnroll.Table(new string[] {
                             "Run Number"});
-                table862.AddRow(new string[] {
+                table864.AddRow(new string[] {
                             "SU803B"});
 #line 26
- await testRunner.AndAsync("I enter Run Number:", ((string)(null)), table862, "And ");
-#line hidden
-                global::Reqnroll.Table table863 = new global::Reqnroll.Table(new string[] {
-                            "Memo"});
-                table863.AddRow(new string[] {
-                            "Test"});
-#line 29
- await testRunner.AndAsync("I enter Add a Service Line Memo:", ((string)(null)), table863, "And ");
-#line hidden
-                global::Reqnroll.Table table864 = new global::Reqnroll.Table(new string[] {
-                            "Departure Time"});
-                table864.AddRow(new string[] {
-                            "01:00:00"});
-#line 32
-   await testRunner.AndAsync("I set Departure Time:", ((string)(null)), table864, "And ");
+ await testRunner.AndAsync("I enter Run Number:", ((string)(null)), table864, "And ");
 #line hidden
                 global::Reqnroll.Table table865 = new global::Reqnroll.Table(new string[] {
-                            "Arrival Time"});
+                            "Memo"});
                 table865.AddRow(new string[] {
+                            "Test"});
+#line 29
+ await testRunner.AndAsync("I enter Add a Service Line Memo:", ((string)(null)), table865, "And ");
+#line hidden
+                global::Reqnroll.Table table866 = new global::Reqnroll.Table(new string[] {
+                            "Departure Time"});
+                table866.AddRow(new string[] {
+                            "01:00:00"});
+#line 32
+   await testRunner.AndAsync("I set Departure Time:", ((string)(null)), table866, "And ");
+#line hidden
+                global::Reqnroll.Table table867 = new global::Reqnroll.Table(new string[] {
+                            "Arrival Time"});
+                table867.AddRow(new string[] {
                             "02:00:00"});
 #line 35
-   await testRunner.AndAsync("I set Arrival Time:", ((string)(null)), table865, "And ");
+   await testRunner.AndAsync("I set Arrival Time:", ((string)(null)), table867, "And ");
 #line hidden
 #line 38
    await testRunner.AndAsync("I press dialog OK button of Add a Service Line", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -234,24 +234,24 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 44
    await testRunner.AndAsync("I select value lookup of Delay Code field", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table866 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table868 = new global::Reqnroll.Table(new string[] {
                             "Delay Code"});
-                table866.AddRow(new string[] {
+                table868.AddRow(new string[] {
                             "ES"});
 #line 45
-   await testRunner.AndAsync("I filter table Delay Code:", ((string)(null)), table866, "And ");
+   await testRunner.AndAsync("I filter table Delay Code:", ((string)(null)), table868, "And ");
 #line hidden
 #line 48
    await testRunner.AndAsync("I select no.1 record Delay Code table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table867 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table869 = new global::Reqnroll.Table(new string[] {
                             "Delay Reason",
                             "Departure Time Change Reason"});
-                table867.AddRow(new string[] {
+                table869.AddRow(new string[] {
                             "Delay Reason Test",
                             "Departure Time Change Reason Test"});
 #line 49
-   await testRunner.AndAsync("I enter following Depart Run details:", ((string)(null)), table867, "And ");
+   await testRunner.AndAsync("I enter following Depart Run details:", ((string)(null)), table869, "And ");
 #line hidden
 #line 52
    await testRunner.AndAsync("I press dialog OK button of Depart Run", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -265,12 +265,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 55
   await testRunner.AndAsync("I select List View button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table868 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table870 = new global::Reqnroll.Table(new string[] {
                             "Yard Asset"});
-                table868.AddRow(new string[] {
+                table870.AddRow(new string[] {
                             "HOVE-YARD"});
 #line 56
-  await testRunner.AndAsync("I filter table Service Management:", ((string)(null)), table868, "And ");
+  await testRunner.AndAsync("I filter table Service Management:", ((string)(null)), table870, "And ");
 #line hidden
 #line 59
  await testRunner.AndAsync("I select no.1 record Service Management table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
