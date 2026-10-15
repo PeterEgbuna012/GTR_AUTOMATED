@@ -160,22 +160,22 @@ await testRunner.GivenAsync(string.Format("I sign as {0}", role), ((string)(null
 #line 16
  await testRunner.AndAsync("I select create new record", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table566 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table568 = new global::Reqnroll.Table(new string[] {
                             "Description"});
-                table566.AddRow(new string[] {
+                table568.AddRow(new string[] {
                             "ASSET SWAP WO TEST"});
 #line 17
- await testRunner.AndAsync("I enter work order:", ((string)(null)), table566, "And ");
+ await testRunner.AndAsync("I enter work order:", ((string)(null)), table568, "And ");
 #line hidden
 #line 20
  await testRunner.AndAsync("I choose Select Value from Detail Menu of Location field", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table567 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table569 = new global::Reqnroll.Table(new string[] {
                             "Location"});
-                table567.AddRow(new string[] {
+                table569.AddRow(new string[] {
                             "387102"});
 #line 21
- await testRunner.AndAsync("I filter table Location:", ((string)(null)), table567, "And ");
+ await testRunner.AndAsync("I filter table Location:", ((string)(null)), table569, "And ");
 #line hidden
 #line 24
  await testRunner.AndAsync("I select no. 1 from Location table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -183,12 +183,12 @@ await testRunner.GivenAsync(string.Format("I sign as {0}", role), ((string)(null
 #line 25
  await testRunner.AndAsync("I open Select Value lookup for Work Type field", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table568 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table570 = new global::Reqnroll.Table(new string[] {
                             "Type"});
-                table568.AddRow(new string[] {
+                table570.AddRow(new string[] {
                             "=CM"});
 #line 26
- await testRunner.AndAsync("I filter table Work Type:", ((string)(null)), table568, "And ");
+ await testRunner.AndAsync("I filter table Work Type:", ((string)(null)), table570, "And ");
 #line hidden
 #line 29
  await testRunner.AndAsync("I select no. 1 from Work Type table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -196,12 +196,12 @@ await testRunner.GivenAsync(string.Format("I sign as {0}", role), ((string)(null
 #line 30
  await testRunner.AndAsync("I choose Select Value from Detail Menu of Repair Facility", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table569 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table571 = new global::Reqnroll.Table(new string[] {
                             "Repair Facility"});
-                table569.AddRow(new string[] {
+                table571.AddRow(new string[] {
                             "HORNSEY"});
 #line 31
- await testRunner.AndAsync("I filter table Repair Facility:", ((string)(null)), table569, "And ");
+ await testRunner.AndAsync("I filter table Repair Facility:", ((string)(null)), table571, "And ");
 #line hidden
 #line 34
  await testRunner.AndAsync("I select no. 1 record from Repair Facility table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -209,12 +209,12 @@ await testRunner.GivenAsync(string.Format("I sign as {0}", role), ((string)(null
 #line 35
  await testRunner.AndAsync("I open Select Value lookup for Priority field", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table570 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table572 = new global::Reqnroll.Table(new string[] {
                             "Value"});
-                table570.AddRow(new string[] {
+                table572.AddRow(new string[] {
                             "Next Exam"});
 #line 36
- await testRunner.AndAsync("I filter table Priority field:", ((string)(null)), table570, "And ");
+ await testRunner.AndAsync("I filter table Priority field:", ((string)(null)), table572, "And ");
 #line hidden
 #line 39
  await testRunner.AndAsync("I select no. 1 record from Priority table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -284,14 +284,14 @@ await testRunner.GivenAsync(string.Format("I sign as {0}", role), ((string)(null
 #line 63
   await testRunner.AndAsync("I open application Work Order Tracking BRDA from Favorite Menu", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table571 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table573 = new global::Reqnroll.Table(new string[] {
                             "Description",
                             "Status"});
-                table571.AddRow(new string[] {
+                table573.AddRow(new string[] {
                             "ASSET SWAP WO TEST",
                             "=WAIT-REV"});
 #line 64
-  await testRunner.AndAsync("I filter table CM Work Order:", ((string)(null)), table571, "And ");
+  await testRunner.AndAsync("I filter table CM Work Order:", ((string)(null)), table573, "And ");
 #line hidden
 #line 67
   await testRunner.AndAsync("I select no. 1 record from CM Work Order table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -326,12 +326,12 @@ await testRunner.GivenAsync(string.Format("I sign as {0}", role), ((string)(null
 #line 77
   await testRunner.AndAsync("I choose select value from detail menu of materials item field", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table572 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table574 = new global::Reqnroll.Table(new string[] {
                             "item"});
-                table572.AddRow(new string[] {
+                table574.AddRow(new string[] {
                             "093/051371"});
 #line 78
-  await testRunner.AndAsync("I filter table item:", ((string)(null)), table572, "And ");
+  await testRunner.AndAsync("I filter table item:", ((string)(null)), table574, "And ");
 #line hidden
 #line 81
   await testRunner.AndAsync("I select no. 1 from item table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -339,12 +339,12 @@ await testRunner.GivenAsync(string.Format("I sign as {0}", role), ((string)(null
 #line 82
   await testRunner.AndAsync("I choose select value from detail menu of materials storeroom field", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table573 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table575 = new global::Reqnroll.Table(new string[] {
                             "storeroom"});
-                table573.AddRow(new string[] {
+                table575.AddRow(new string[] {
                             "BI-Z-VALUE"});
 #line 83
-  await testRunner.AndAsync("I filter storeroom:", ((string)(null)), table573, "And ");
+  await testRunner.AndAsync("I filter storeroom:", ((string)(null)), table575, "And ");
 #line hidden
 #line 86
   await testRunner.AndAsync("I select no. 1 from materials storeroom table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -367,12 +367,12 @@ await testRunner.GivenAsync(string.Format("I sign as {0}", role), ((string)(null
 #line 92
   await testRunner.AndAsync("I open Select Value lookup for Labor field", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table574 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table576 = new global::Reqnroll.Table(new string[] {
                             "Labor"});
-                table574.AddRow(new string[] {
+                table576.AddRow(new string[] {
                             "ISCOTT"});
 #line 93
-  await testRunner.AndAsync("I filter table Labor:", ((string)(null)), table574, "And ");
+  await testRunner.AndAsync("I filter table Labor:", ((string)(null)), table576, "And ");
 #line hidden
 #line 96
   await testRunner.AndAsync("I select no. 2 record from Labor table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

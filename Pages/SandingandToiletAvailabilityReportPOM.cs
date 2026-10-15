@@ -63,73 +63,86 @@ namespace GTR_AUTOMATED.Pages
                     By.XPath("//button[normalize-space()='Submit']"),
                     "I submit Sanding Report"));
 
-          public void TakeScreenshotOfSandingReport()
-          {
-              AllureLogger.LogStep("Capture Screenshot for GTR-UAT-RTS-01", () =>
-              {
-                  try
-                  {
+         public void TakeScreenshotOfSandingReport()
+         {
+            AllureLogger.LogStep("Capture Screenshot for GTR-UAT-RTS-01", () =>
+            {
+                string originalWindow = driver.CurrentWindowHandle;
 
-                    string originalWindow = driver.CurrentWindowHandle;
+                try
+                {
+                    WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(120));
 
-                    WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(80));
+                    // Wait until another window is opened
+                    wait.Until(d => d.WindowHandles.Count > 1);
 
-                    // Wait for the report window/tab to open
-                    wait.Until(drv => drv.WindowHandles.Count > 1);
+                    // Switch to latest opened window
+                    string reportWindow = driver.WindowHandles.Last();
 
-                    // Get the newly opened report window
-                    string reportWindow = driver.WindowHandles
-                        .First(handle => handle != originalWindow);
-
-                    // Switch to report window
                     driver.SwitchTo().Window(reportWindow);
 
-                    // Maximise the window for a full report screenshot
+                    // Maximise report window
                     driver.Manage().Window.Maximize();
 
-                    // Wait for page load completion
-                    wait.Until(drv =>
-                        ((IJavaScriptExecutor)drv)
+                    // Wait for page load
+                    wait.Until(d =>
+                        ((IJavaScriptExecutor)d)
                             .ExecuteScript("return document.readyState")
                             .ToString()
                             .Equals("complete"));
 
-                    // Ensure the report body is visible
-                    wait.Until(drv => drv.FindElement(By.TagName("body")).Displayed);
+                    // Additional wait for report rendering
+                    wait.Until(d =>
+                    {
+                        try
+                        {
+                            return d.FindElement(By.TagName("body")).Displayed;
+                        }
+                        catch
+                        {
+                            return false;
+                        }
+                    });
 
-                    // Take screenshot
+                    // Optional pause for Jasper/PDF/HTML report rendering
+                    Thread.Sleep(3000);
+
                     var takeScreenshot = new TakeScreenShotPOM(driver);
-                    string successPath = @"C:\Documents\GTR_AUTOMATED\Screenshots\GTR-UAT-RTS-01.png";
+
+                    string successPath =
+                        @"C:\Documents\GTR_AUTOMATED\Screenshots\GTR-UAT-RTS-01.png";
 
                     takeScreenshot.TakeScreenshot(driver, successPath);
 
-                    Console.WriteLine($"Screenshot saved: {successPath}");
-
-                    // Return to the original window
-                    driver.SwitchTo().Window(originalWindow);
-                  }
-                  catch (Exception ex)
-                  {
-                    Console.WriteLine($"Screenshot failed: {ex.Message}");
-
+                    Console.WriteLine($"Screenshot saved successfully: {successPath}");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Screenshot failed: {ex}");
 
                     var takeScreenshot = new TakeScreenShotPOM(driver);
-                    string failurePath = @"C:\Documents\GTR_AUTOMATED\Screenshots\Failures\GTR-UAT-RTS-01_Failure.png";
+
+                    string failurePath =
+                        @"C:\Documents\GTR_AUTOMATED\Screenshots\Failures\GTR-UAT-RTS-01_Failure.png";
 
                     takeScreenshot.TakeScreenshot(driver, failurePath);
 
-                    throw new Exception("Test failed while taking screenshot.", ex);
-                  }
-              });
-          }
-
+                    throw;
+                }
+                finally
+                {
+                    // Always return to original window
+                    driver.SwitchTo().Window(originalWindow);
+                }
+            });
+         }
 
 
         //Toilet Availability Report POM Steps Definitions
 
 
 
-          public void FilterReports(string Reports) =>
+        public void FilterReports(string Reports) =>
           AllureLogger.LogStep($"I filter table Reports with '{Reports}'", () =>
           {
               WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(50));
@@ -169,59 +182,80 @@ namespace GTR_AUTOMATED.Pages
           {
               AllureLogger.LogStep("Capture Screenshot for GTR-UAT-RTS-02", () =>
               {
-                  try
-                  {
+                string originalWindow = driver.CurrentWindowHandle;
 
-                    string originalWindow = driver.CurrentWindowHandle;
+                 try
+                 {
+                    WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(120));
 
-                    WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(80));
+                    // Wait for report window/tab to open
+                    wait.Until(d => d.WindowHandles.Count > 1);
 
-                    // Wait for the report window/tab to open
-                    wait.Until(drv => drv.WindowHandles.Count > 1);
+                    // Switch to the latest opened window
+                    string reportWindow = driver.WindowHandles.Last();
 
-                    // Get the newly opened report window
-                    string reportWindow = driver.WindowHandles
-                        .First(handle => handle != originalWindow);
-
-                    // Switch to report window
                     driver.SwitchTo().Window(reportWindow);
 
-                    // Maximise the window for a full report screenshot
+                    // Maximise report window
                     driver.Manage().Window.Maximize();
 
-                    // Wait for page load completion
-                    wait.Until(drv =>
-                        ((IJavaScriptExecutor)drv)
+                    // Wait for page load
+                    wait.Until(d =>
+                        ((IJavaScriptExecutor)d)
                             .ExecuteScript("return document.readyState")
                             .ToString()
                             .Equals("complete"));
 
-                    // Ensure the report body is visible
-                    wait.Until(drv => drv.FindElement(By.TagName("body")).Displayed);
+                    // Wait for report body
+                    wait.Until(d =>
+                    {
+                        try
+                        {
+                            return d.FindElement(By.TagName("body")).Displayed;
+                        }
+                        catch
+                        {
+                            return false;
+                        }
+                    });
 
-                    // Take screenshot
+                    // Give report time to render
+                    Thread.Sleep(3000);
+
+                    Console.WriteLine($"Current Window: {driver.CurrentWindowHandle}");
+                    Console.WriteLine($"Title: {driver.Title}");
+                    Console.WriteLine($"URL: {driver.Url}");
+
                     var takeScreenshot = new TakeScreenShotPOM(driver);
-                    string successPath = @"C:\Documents\GTR_AUTOMATED\Screenshots\GTR-UAT-RTS-02.png";
+
+                    string successPath =
+                        @"C:\Documents\GTR_AUTOMATED\Screenshots\GTR-UAT-RTS-02.png";
 
                     takeScreenshot.TakeScreenshot(driver, successPath);
 
-                    Console.WriteLine($"Screenshot saved: {successPath}");
-
-                    // Return to the original window
-                    driver.SwitchTo().Window(originalWindow);
-                  }
-                  catch (Exception ex)
-                  {
-                    Console.WriteLine($"Screenshot failed: {ex.Message}");
-
+                    Console.WriteLine($"Screenshot saved successfully: {successPath}");
+                 }
+                 catch (Exception ex)
+                 {
+                    Console.WriteLine($"Screenshot failed: {ex}");
 
                     var takeScreenshot = new TakeScreenShotPOM(driver);
-                    string failurePath = @"C:\Documents\GTR_AUTOMATED\Screenshots\Failures\GTR-UAT-RTS-02_Failure.png";
+
+                    string failurePath =
+                        @"C:\Documents\GTR_AUTOMATED\Screenshots\Failures\GTR-UAT-RTS-02_Failure.png";
 
                     takeScreenshot.TakeScreenshot(driver, failurePath);
 
-                     throw new Exception("Test failed while taking screenshot.", ex);
-                  }
+                    throw new Exception("Test failed while taking screenshot.", ex);
+                 }
+                 finally
+                 {
+                    // Return to original window
+                    if (driver.WindowHandles.Contains(originalWindow))
+                    {
+                        driver.SwitchTo().Window(originalWindow);
+                    }
+                 }
               });
           }
 

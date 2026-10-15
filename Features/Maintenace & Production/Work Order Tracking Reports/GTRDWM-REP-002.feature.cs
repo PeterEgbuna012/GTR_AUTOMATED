@@ -156,34 +156,34 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 14
    await testRunner.AndAsync("I open application Work Order Tracking (BRDA)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table347 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table349 = new global::Reqnroll.Table(new string[] {
                             "Description",
                             "Status"});
-                table347.AddRow(new string[] {
+                table349.AddRow(new string[] {
                             "CM WO AUTO TEST",
                             "=WAIT-REV"});
 #line 15
-   await testRunner.AndAsync("I filter table CM Work Order:", ((string)(null)), table347, "And ");
+   await testRunner.AndAsync("I filter table CM Work Order:", ((string)(null)), table349, "And ");
 #line hidden
 #line 19
    await testRunner.AndAsync("I select action Run Reports", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table348 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table350 = new global::Reqnroll.Table(new string[] {
                             "Report"});
-                table348.AddRow(new string[] {
+                table350.AddRow(new string[] {
                             "Campaign Overview"});
 #line 20
-   await testRunner.AndAsync("I filter Report table:", ((string)(null)), table348, "And ");
+   await testRunner.AndAsync("I filter Report table:", ((string)(null)), table350, "And ");
 #line hidden
 #line 23
    await testRunner.AndAsync("I select no. 1 record from Reports table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table349 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table351 = new global::Reqnroll.Table(new string[] {
                             "Period Count"});
-                table349.AddRow(new string[] {
+                table351.AddRow(new string[] {
                             "2"});
 #line 24
-   await testRunner.AndAsync("I enter period count:", ((string)(null)), table349, "And ");
+   await testRunner.AndAsync("I enter period count:", ((string)(null)), table351, "And ");
 #line hidden
 #line 27
       await testRunner.AndAsync("I set (Radio) field to \"Immediate\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

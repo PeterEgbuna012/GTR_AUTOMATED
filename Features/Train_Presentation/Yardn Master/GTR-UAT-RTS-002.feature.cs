@@ -156,12 +156,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 14
  await testRunner.AndAsync("I open application Depot Management (BRDF)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table675 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table677 = new global::Reqnroll.Table(new string[] {
                             "Yard Asset"});
-                table675.AddRow(new string[] {
+                table677.AddRow(new string[] {
                             "LITTLEHAMPTON-YARD"});
 #line 15
- await testRunner.AndAsync("I filter table Yard Asset:", ((string)(null)), table675, "And ");
+ await testRunner.AndAsync("I filter table Yard Asset:", ((string)(null)), table677, "And ");
 #line hidden
 #line 18
  await testRunner.AndAsync("I select no.1 record Yard Asset table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -172,14 +172,14 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 20
  await testRunner.AndAsync("I add Block to the Road", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table676 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table678 = new global::Reqnroll.Table(new string[] {
                             "Memo",
                             "Poistion"});
-                table676.AddRow(new string[] {
+                table678.AddRow(new string[] {
                             "TESTING",
                             "1"});
 #line 21
- await testRunner.AndAsync("I enter Block Details:", ((string)(null)), table676, "And ");
+ await testRunner.AndAsync("I enter Block Details:", ((string)(null)), table678, "And ");
 #line hidden
 #line 24
  await testRunner.AndAsync("I select dialog ok button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

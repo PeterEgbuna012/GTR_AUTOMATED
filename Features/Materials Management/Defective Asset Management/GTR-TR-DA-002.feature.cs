@@ -160,22 +160,22 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 15
   await testRunner.AndAsync("I select create new clams button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table391 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table393 = new global::Reqnroll.Table(new string[] {
                             "Clams Description"});
-                table391.AddRow(new string[] {
+                table393.AddRow(new string[] {
                             "Raising a Warranty Claim Test"});
 #line 16
-  await testRunner.AndAsync("I enter Clams Details:", ((string)(null)), table391, "And ");
+  await testRunner.AndAsync("I enter Clams Details:", ((string)(null)), table393, "And ");
 #line hidden
 #line 19
    await testRunner.AndAsync("I choose select value from detail menu of asset field", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table392 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table394 = new global::Reqnroll.Table(new string[] {
                             "Asset"});
-                table392.AddRow(new string[] {
+                table394.AddRow(new string[] {
                             "1000000"});
 #line 20
-   await testRunner.AndAsync("I filter table Asset:", ((string)(null)), table392, "And ");
+   await testRunner.AndAsync("I filter table Asset:", ((string)(null)), table394, "And ");
 #line hidden
 #line 23
   await testRunner.AndAsync("I select no. 1 record from asset table record", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -201,14 +201,14 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 30
   await testRunner.AndAsync("I select the New Row button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table393 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table395 = new global::Reqnroll.Table(new string[] {
                             "Summary",
                             "Details"});
-                table393.AddRow(new string[] {
+                table395.AddRow(new string[] {
                             "Raising a Warranty Claim Test",
                             "Raising a Warranty Claim Auto Test"});
 #line 31
-  await testRunner.AndAsync("I enter following claim logs:", ((string)(null)), table393, "And ");
+  await testRunner.AndAsync("I enter following claim logs:", ((string)(null)), table395, "And ");
 #line hidden
 #line 34
   await testRunner.AndAsync("I save record", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -216,24 +216,24 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 35
   await testRunner.AndAsync("I go to claim tab", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table394 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table396 = new global::Reqnroll.Table(new string[] {
                             "RMA Reference",
                             "Missed Peaks"});
-                table394.AddRow(new string[] {
+                table396.AddRow(new string[] {
                             "TAUTO",
                             "100"});
 #line 36
-  await testRunner.AndAsync("I enter following claim data:", ((string)(null)), table394, "And ");
+  await testRunner.AndAsync("I enter following claim data:", ((string)(null)), table396, "And ");
 #line hidden
 #line 39
   await testRunner.AndAsync("I choose select value from detail menu of contract field", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table395 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table397 = new global::Reqnroll.Table(new string[] {
                             "Contract"});
-                table395.AddRow(new string[] {
+                table397.AddRow(new string[] {
                             "BOM"});
 #line 40
-  await testRunner.AndAsync("I filter table contract:", ((string)(null)), table395, "And ");
+  await testRunner.AndAsync("I filter table contract:", ((string)(null)), table397, "And ");
 #line hidden
 #line 43
   await testRunner.AndAsync("I select no. 1 record from contract table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -241,14 +241,14 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 44
   await testRunner.AndAsync("I save record", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table396 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table398 = new global::Reqnroll.Table(new string[] {
                             "Cost",
                             "Claimed Amount"});
-                table396.AddRow(new string[] {
+                table398.AddRow(new string[] {
                             "100",
                             "100"});
 #line 45
-   await testRunner.AndAsync("I enter claim data:", ((string)(null)), table396, "And ");
+   await testRunner.AndAsync("I enter claim data:", ((string)(null)), table398, "And ");
 #line hidden
 #line 48
   await testRunner.AndAsync("I press route the workflow button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

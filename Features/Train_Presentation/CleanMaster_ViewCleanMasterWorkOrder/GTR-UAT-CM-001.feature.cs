@@ -156,12 +156,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 14
   await testRunner.AndAsync("I open application Clean Master Application (MXR)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table595 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table597 = new global::Reqnroll.Table(new string[] {
                             "All 377 Unit"});
-                table595.AddRow(new string[] {
+                table597.AddRow(new string[] {
                             "SANITISATION"});
 #line 15
-  await testRunner.AndAsync("I filter table All Unit:", ((string)(null)), table595, "And ");
+  await testRunner.AndAsync("I filter table All Unit:", ((string)(null)), table597, "And ");
 #line hidden
 #line 18
   await testRunner.AndAsync("I view work order details", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

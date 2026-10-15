@@ -159,26 +159,26 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 15
     await testRunner.AndAsync("I select action Run Reports", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table388 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table390 = new global::Reqnroll.Table(new string[] {
                             "Report"});
-                table388.AddRow(new string[] {
+                table390.AddRow(new string[] {
                             "Work Bank Size Summary Report"});
 #line 16
-    await testRunner.AndAsync("I filter Report table:", ((string)(null)), table388, "And ");
+    await testRunner.AndAsync("I filter Report table:", ((string)(null)), table390, "And ");
 #line hidden
 #line 19
    await testRunner.AndAsync("I select no. 1 record from Reports table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table389 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table391 = new global::Reqnroll.Table(new string[] {
                             "Owner Group",
                             "Repair Facility",
                             "Work Type"});
-                table389.AddRow(new string[] {
+                table391.AddRow(new string[] {
                             "=RS",
                             "=HORNSEY",
                             "=CM"});
 #line 20
-   await testRunner.AndAsync("I enter Work Bank Size Report Details:", ((string)(null)), table389, "And ");
+   await testRunner.AndAsync("I enter Work Bank Size Report Details:", ((string)(null)), table391, "And ");
 #line hidden
 #line 23
    await testRunner.AndAsync("I submit Work Bank Size Summary Report", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

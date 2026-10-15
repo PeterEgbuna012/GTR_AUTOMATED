@@ -167,12 +167,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 15
  await testRunner.AndAsync("I open application Toilet Checker (MXR)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table643 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table645 = new global::Reqnroll.Table(new string[] {
                             "Toilet Checker"});
-                table643.AddRow(new string[] {
+                table645.AddRow(new string[] {
                             "171810"});
 #line 16
- await testRunner.AndAsync("I filter table Toilet Checker:", ((string)(null)), table643, "And ");
+ await testRunner.AndAsync("I filter table Toilet Checker:", ((string)(null)), table645, "And ");
 #line hidden
 #line 19
  await testRunner.AndAsync("I select change toilet asset statuse button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -183,12 +183,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 21
  await testRunner.AndAsync("I select unavailable", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table644 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table646 = new global::Reqnroll.Table(new string[] {
                             "Toilet Checker"});
-                table644.AddRow(new string[] {
+                table646.AddRow(new string[] {
                             "Technical Fault"});
 #line 22
- await testRunner.AndAsync("I filter table Toilet Unavailable Reason:", ((string)(null)), table644, "And ");
+ await testRunner.AndAsync("I filter table Toilet Unavailable Reason:", ((string)(null)), table646, "And ");
 #line hidden
 #line 25
  await testRunner.AndAsync("I press button ok", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -214,14 +214,14 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 32
  await testRunner.WhenAsync("I open application Work Orders, Fault Reporting (BRDA)", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-                global::Reqnroll.Table table645 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table647 = new global::Reqnroll.Table(new string[] {
                             "Summary",
                             "Location"});
-                table645.AddRow(new string[] {
+                table647.AddRow(new string[] {
                             "=Technical Fault",
                             "171810"});
 #line 33
- await testRunner.AndAsync("I filter table Fault Reporting (BRDA):", ((string)(null)), table645, "And ");
+ await testRunner.AndAsync("I filter table Fault Reporting (BRDA):", ((string)(null)), table647, "And ");
 #line hidden
 #line 36
  await testRunner.AndAsync("I select no. 1 record from Fault Reporting table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -295,12 +295,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 59
  await testRunner.AndAsync("I open application Toilet Checker (MXR)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table646 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table648 = new global::Reqnroll.Table(new string[] {
                             "Toilet Checker"});
-                table646.AddRow(new string[] {
+                table648.AddRow(new string[] {
                             "171810"});
 #line 60
- await testRunner.AndAsync("I filter table Toilet Checker:", ((string)(null)), table646, "And ");
+ await testRunner.AndAsync("I filter table Toilet Checker:", ((string)(null)), table648, "And ");
 #line hidden
 #line 63
  await testRunner.AndAsync("I select change toilet asset statuse button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

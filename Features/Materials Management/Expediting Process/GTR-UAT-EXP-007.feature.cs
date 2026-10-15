@@ -155,12 +155,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 14
  await testRunner.AndAsync("I go to Materials Depot manager\'s start centre", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table448 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table450 = new global::Reqnroll.Table(new string[] {
                             "POs to Expedite"});
-                table448.AddRow(new string[] {
+                table450.AddRow(new string[] {
                             "SR117805"});
 #line 15
- await testRunner.AndAsync("I filter Portlet table POs to Expedite:", ((string)(null)), table448, "And ");
+ await testRunner.AndAsync("I filter Portlet table POs to Expedite:", ((string)(null)), table450, "And ");
 #line hidden
 #line 18
     await testRunner.AndAsync("I select no. 1 record from  POs to Expedite Portlet table record", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

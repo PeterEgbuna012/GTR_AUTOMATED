@@ -159,31 +159,31 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 15
    await testRunner.AndAsync("I select action Run Reports", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table373 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table375 = new global::Reqnroll.Table(new string[] {
                             "Report"});
-                table373.AddRow(new string[] {
+                table375.AddRow(new string[] {
                             "Repeat Failure Report"});
 #line 16
-   await testRunner.AndAsync("I filter Report table:", ((string)(null)), table373, "And ");
+   await testRunner.AndAsync("I filter Report table:", ((string)(null)), table375, "And ");
 #line hidden
 #line 19
    await testRunner.AndAsync("I select no. 1 record from Reports table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table374 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table376 = new global::Reqnroll.Table(new string[] {
                             "Target Date"});
-                table374.AddRow(new string[] {
+                table376.AddRow(new string[] {
                             "01/01/2026"});
 #line 20
-   await testRunner.AndAsync("I enter Target Date:", ((string)(null)), table374, "And ");
+   await testRunner.AndAsync("I enter Target Date:", ((string)(null)), table376, "And ");
 #line hidden
-                global::Reqnroll.Table table375 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table377 = new global::Reqnroll.Table(new string[] {
                             "Period Count",
                             "Location Class"});
-                table375.AddRow(new string[] {
+                table377.AddRow(new string[] {
                             "1",
                             "=1001,=1002,=1006,=1007"});
 #line 23
-      await testRunner.AndAsync("I enter repeat failure report details:", ((string)(null)), table375, "And ");
+      await testRunner.AndAsync("I enter repeat failure report details:", ((string)(null)), table377, "And ");
 #line hidden
 #line 26
    await testRunner.AndAsync("I submit Failure Report", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

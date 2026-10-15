@@ -157,12 +157,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 14
  await testRunner.AndAsync("I open application Depot Management (BRDF)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table684 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table686 = new global::Reqnroll.Table(new string[] {
                             "Yard Asset"});
-                table684.AddRow(new string[] {
+                table686.AddRow(new string[] {
                             "SELHURST-YARD"});
 #line 15
- await testRunner.AndAsync("I filter table Yard Asset:", ((string)(null)), table684, "And ");
+ await testRunner.AndAsync("I filter table Yard Asset:", ((string)(null)), table686, "And ");
 #line hidden
 #line 18
  await testRunner.AndAsync("I select no.1 record Yard Asset table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -173,12 +173,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 20
  await testRunner.AndAsync("I Add Road Comment", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table685 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table687 = new global::Reqnroll.Table(new string[] {
                             "Comment"});
-                table685.AddRow(new string[] {
+                table687.AddRow(new string[] {
                             "COMMENT TESTING"});
 #line 21
- await testRunner.AndAsync("I enter Comment:", ((string)(null)), table685, "And ");
+ await testRunner.AndAsync("I enter Comment:", ((string)(null)), table687, "And ");
 #line hidden
 #line 24
  await testRunner.AndAsync("I click OK dialog button of Add Comment dialog", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -189,12 +189,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 26
  await testRunner.AndAsync("I Modify Road Comment", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table686 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table688 = new global::Reqnroll.Table(new string[] {
                             "Comment"});
-                table686.AddRow(new string[] {
+                table688.AddRow(new string[] {
                             "COMMENT TESTING UPDATED"});
 #line 27
- await testRunner.AndAsync("I Modify Comment:", ((string)(null)), table686, "And ");
+ await testRunner.AndAsync("I Modify Comment:", ((string)(null)), table688, "And ");
 #line hidden
 #line 30
     await testRunner.AndAsync("I click OK dialog button of Modify Comment dialog", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

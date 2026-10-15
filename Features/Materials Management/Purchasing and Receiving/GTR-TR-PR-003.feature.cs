@@ -157,16 +157,16 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 15
  await testRunner.AndAsync("I open application Receiving (Tr) from Fav Menu", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table509 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table511 = new global::Reqnroll.Table(new string[] {
                             "PO",
                             "PO Status",
                             "Receipts"});
-                table509.AddRow(new string[] {
+                table511.AddRow(new string[] {
                             "HN",
                             "=APPR",
                             "PARTIAL"});
 #line 16
- await testRunner.AndAsync("I filter Receiving (Tr):", ((string)(null)), table509, "And ");
+ await testRunner.AndAsync("I filter Receiving (Tr):", ((string)(null)), table511, "And ");
 #line hidden
 #line 19
     await testRunner.AndAsync("I select no. 2 record from PO Item table record", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -174,14 +174,14 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 20
  await testRunner.AndAsync("I select Ordered Items button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table510 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table512 = new global::Reqnroll.Table(new string[] {
                             "Delivery Note",
                             "Remarks Note"});
-                table510.AddRow(new string[] {
+                table512.AddRow(new string[] {
                             "TEST AUTO",
                             "Receiving New Rotating Material Auto Test"});
 #line 21
- await testRunner.AndAsync("I enter  delivery note:", ((string)(null)), table510, "And ");
+ await testRunner.AndAsync("I enter  delivery note:", ((string)(null)), table512, "And ");
 #line hidden
 #line 24
  await testRunner.AndAsync("I select no. 1 PO Item to receive table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

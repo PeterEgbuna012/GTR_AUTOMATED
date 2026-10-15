@@ -156,24 +156,24 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line 15
    await testRunner.AndAsync("I open application Work Order Tracking (BRDA)", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table345 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table347 = new global::Reqnroll.Table(new string[] {
                             "Description",
                             "Status"});
-                table345.AddRow(new string[] {
+                table347.AddRow(new string[] {
                             "CM WO AUTO TEST",
                             "=WAIT-REV"});
 #line 16
-   await testRunner.AndAsync("I filter table CM Work Order:", ((string)(null)), table345, "And ");
+   await testRunner.AndAsync("I filter table CM Work Order:", ((string)(null)), table347, "And ");
 #line hidden
 #line 20
    await testRunner.AndAsync("I select action Run Reports", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-                global::Reqnroll.Table table346 = new global::Reqnroll.Table(new string[] {
+                global::Reqnroll.Table table348 = new global::Reqnroll.Table(new string[] {
                             "Report"});
-                table346.AddRow(new string[] {
+                table348.AddRow(new string[] {
                             "Work Order Details Report"});
 #line 21
-   await testRunner.AndAsync("I filter Report table:", ((string)(null)), table346, "And ");
+   await testRunner.AndAsync("I filter Report table:", ((string)(null)), table348, "And ");
 #line hidden
 #line 24
    await testRunner.AndAsync("I select no. 1 record from Reports table records", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
