@@ -9,6 +9,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Reporting\AllureReportGenerator\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" />
+	  <Compile Remove="Reporting\AllureReportGenerator\obj\Debug\net10.0\AllureReportGenerator.AssemblyInfo.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
 
 		<!-- Allure -->
 		<PackageReference Include="Allure.Net.Commons" Version="3.0.0-preview.1" />

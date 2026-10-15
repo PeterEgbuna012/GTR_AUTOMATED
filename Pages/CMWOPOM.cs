@@ -431,36 +431,60 @@ namespace GTR_Automated_Tests.Pages
          });
 
 
-         public void ITakeScreenshotOfCreateACMWorkOrderTest() =>
-         AllureLogger.LogStep("Capture Screenshot for GTRDWM-REG-200", () =>
-         {
-             try
-             {
-                 var takescreenshot = new TakeScreenShotPOM(driver);
-                 string successPath = @"C:\Documents\GTR_AUTOMATED\Screenshots\GTRDWM-REG-200.png";
+        public void ITakeScreenshotOfCreateACMWorkOrderTest() =>
+    AllureLogger.LogStep("Capture Screenshot for GTRDWM-REG-200", () =>
+    {
+        try
+        {
+            // Scroll to Save icon
+            var saveIcon = driver.FindElement(By.Id("toolactions_SAVE-tbb_image"));
 
-                 takescreenshot.TakeScreenshot(driver, successPath);
-             }
-             catch (Exception ex)
-             {
-                 Console.WriteLine($"Screenshot failed: {ex.Message}");
+            ((IJavaScriptExecutor)driver).ExecuteScript(
+                "arguments[0].scrollIntoView({block:'start', inline:'nearest'});",
+                saveIcon);
 
-                 // Attempt fallback screenshot on failure
-                 var failureScreenshotPath = @"C:\Documents\GTR_AUTOMATED\Screenshots\Failures\GTRDWM-REG-200_Failure.png";
-                 var takescreenshot = new TakeScreenShotPOM(driver);
+            Task.Delay(1000).Wait();
 
-                 takescreenshot.TakeScreenshot(driver, failureScreenshotPath);
+            var takescreenshot = new TakeScreenShotPOM(driver);
+            string successPath = @"C:\Documents\GTR_AUTOMATED\Screenshots\GTRDWM-REG-200.png";
 
-                  // Optional: Rethrow if test should fail
-                 throw new Exception("Test failed while taking screenshot.", ex);
-             }
-         });
+            takescreenshot.TakeScreenshot(driver, successPath);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Screenshot failed: {ex.Message}");
+
+            try
+            {
+                var saveIcon = driver.FindElement(By.Id("toolactions_SAVE-tbb_image"));
+
+                ((IJavaScriptExecutor)driver).ExecuteScript(
+                    "arguments[0].scrollIntoView({block:'start', inline:'nearest'});",
+                    saveIcon);
+
+                Task.Delay(1000).Wait();
+
+                var failureScreenshotPath =
+                    @"C:\Documents\GTR_AUTOMATED\Screenshots\Failures\GTRDWM-REG-200_Failure.png";
+
+                var takescreenshot = new TakeScreenShotPOM(driver);
+
+                takescreenshot.TakeScreenshot(driver, failureScreenshotPath);
+            }
+            catch
+            {
+                // Ignore screenshot failure
+            }
+
+            throw new Exception("Test failed while taking screenshot.", ex);
+        }
+    });
 
 
         //Assigning a CM Work Order POM Step 
 
 
-          public void IOpenApplicationWorkOrderTrackingBRDAFromFavoriteMenu() =>
+        public void IOpenApplicationWorkOrderTrackingBRDAFromFavoriteMenu() =>
           AllureLogger.LogStep(
               "I Open Application Work Order Tracking BRDA From Favorite Menu",
               () =>
@@ -473,7 +497,7 @@ namespace GTR_Automated_Tests.Pages
               });
 
 
-        public void ISelectCMWorkOrderFromTableRecords(int recordNumber)
+         public void ISelectCMWorkOrderFromTableRecords(int recordNumber)
          {
             AllureLogger.LogStep($"I Select No {recordNumber} Record From CM Work Order Table Records", () =>
             {
