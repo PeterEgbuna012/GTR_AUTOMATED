@@ -720,7 +720,7 @@ namespace GTR_AUTOMATED.Pages
             AllureLogger.LogStep("I wait for page to load", () =>
             {
 
-                Task.Delay(120000).Wait();
+                Task.Delay(150000).Wait();
                 // Store the original window handle
                 string originalWindow = driver.CurrentWindowHandle;
 
